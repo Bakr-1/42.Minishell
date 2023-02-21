@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(lldb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/minishell",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for lldb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/mjneibi/Desktop/MINISHELL/srcs/execution/builtin",
+      "program": "/Users/mjneibi/Desktop/MINISHELL/srcs/execution/builtin/build/Debug/outDebug"
+    }
+  ]
+}
