@@ -6,7 +6,7 @@
 /*   By: aalseri <aalseri@student.42Abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 14:08:05 by aalseri           #+#    #+#             */
-/*   Updated: 2023/01/19 22:35:48 by aalseri          ###   ########.fr       */
+/*   Updated: 2023/02/21 13:15:34 by aalseri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,6 @@ int	here_doc_loop(t_redirection *red, t_exec *exec)
 			ft_fprintf(g_gm.h_doc->fd, "\n");
 			if (exec->file)
 			{
-				unlink(exec->file);
 				free(exec->file);
 				exec->file = NULL;
 			}
